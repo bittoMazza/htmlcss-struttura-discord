@@ -3,3 +3,127 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    width: 1500px;
+    margin: 0 auto;
+}
+.head-content{
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-between;
+}
+.top-header{
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.section-container,.bottom-header{
+    padding:40px
+}
+.border-flex{
+    border:2px dashed #000;
+}
+
+#navbar{
+    flex-grow: 3;
+    text-align: center;
+}
+
+.logo-header,.login{
+    flex-grow: 1;
+}
+
+.login{
+    text-align: right;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo-header,.login,li a,.logo-bottom,.button-bottom{
+    padding: 10px;
+}
+
+.bottom-header{
+    background-color: blue;
+} 
+
+ .banner{
+    width: 1000px;
+    height: 300px;
+    margin: 0px auto;
+    background-color:pink ;
+}
+
+/* STILE MAIN */
+
+.section-flex{
+    display: flex;
+}
+
+.big-content{
+    background-color: rgb(65, 132, 231);
+    flex-grow: 3;
+    height: 400px;
+
+}
+
+.small-content{
+    background-color: pink;
+    flex-grow: 1;
+    height: 400px;
+}
+
+/* Provato ad usare selettori avanzati per cambiare colore background ogni 2 elementi main */
+
+main section:nth-child(2n){
+    background-color: grey;
+}
+
+#last-main-content{
+    height: 1000px;
+    background-color: green;
+}
+
+/* STILE FOOTER */
+ footer{
+    background-color: rgb(39, 37, 37);
+}
+
+
+ .top-footer{
+    padding: 10px 0 40px 0px;   
+ }
+.f-left-container{
+    height: 500px;
+    background-color: hotpink;
+    width: 30%;
+}
+
+.f-right-container{
+    width: 70%;
+}
+.f-right-content{
+    height: 500px;
+    width: calc(100% / 4);
+    background-color: aquamarine;
+    border:2px dashed #fff;
+}
+
+.bottom-footer{
+     padding-top: 40px;
+}
+
+.bottom-footer>div{
+    background-color: aquamarine;
+    height: 50px; 
+    justify-content: space-between;
+    align-items: center;
+}
+
